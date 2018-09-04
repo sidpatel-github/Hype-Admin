@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HYPE</title>
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+	<!--  start header  -->
+	<header>
+		<div class="wrapper">
+			<a href="slider.aspx">
+				<img src="img/hype1.png" class="logo"/>
+			</a>
+
+			<nav>
+				<ul>
+					<li><a href="login.aspx">login</a></li>
+                    <li><a href="about.aspx">about us</a></li>
+                    <li><a href="mapforall.aspx">map</a></li>
+
+					<li><a href="service.aspx">service</a></li>
+					<li><a href="contact.aspx">contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!--  end header  -->
+
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <form id="form1" runat="server">
+    <div>
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+    </div>
+    </form>
+  <!--  start footer  -->
+	<footer>
+		<div class="wrapper">
+			<p class="copyrights">Copyright @ 2015-2016 <a href="slider.aspx" target="_blank" class="website">hype.com</a> All Rights Reserved.</p>
+			
+			<ul class="social">
+				<li>
+					<a href="http://www.facebook.com/hype" target="_blank"><img src="img/fb_icon.png" alt="" title=""></a>
+				</li>
+				<li>
+					<a href="http://www.twitter.com/hype" target="_blank"><img src="img/twitter_icon.png" alt="" title=""></a>
+				</li>
+				<li>
+					<a href=""http://www.plus.google.com/+hype"" target="_blank"><img src="img/google_icon.png" alt="" title=""></a>
+				</li>
+				<li>
+					<a href="#" target="_blank"><img src="img/rss_icon.png" alt="" title=""></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<!--  end footer  -->
+
+	
+</body>
+</html>
+
+

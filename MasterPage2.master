@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HYPE</title>
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--bootstrap-->
+			 <link href="css/bootstrap1.min.css" rel="stylesheet" type="text/css">
+		<!--coustom css-->
+			<link href="css/style1.css" rel="stylesheet" type="text/css"/>
+		<!--default-js-->
+			<script src="js/jquery-2.1.4.min.js"></script>
+		<!--bootstrap-js-->
+			<script src="js/bootstrap1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+	<!--  start header  -->
+	<header>
+		<div class="wrapper">
+			<a href="simple.aspx">
+            
+				<img src="img/hype1.png" class="logo"/>
+			</a>
+
+			<nav>
+				<ul>
+                <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">register<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="register.aspx">worker</a></li>
+                        <li><a href="registerclient.aspx">client</a></li>
+                        </ul>
+                    </li>
+              <!--   <li><a href="register.aspx">register</a></li>-->
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">master<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="banner.aspx">banner</a></li>
+                      
+                        <li><a href="state.aspx">state</a></li>
+                        <li><a href="city.aspx">city</a></li>
+                        <li><a href="area.aspx">area</a></li>
+                        </ul>
+                    </li>
+					<li><a href="hoarding.aspx">hoarding</a></li>
+					<li><a href="status.aspx">status</a></li>
+					<li><a href="feedback.aspx">feedback</a></li>
+                    <li><a href="map.aspx">map</a></li>
+                    <li><a href="notification.aspx">notification</a></li>
+					<li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">worker<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="worker.aspx">work</a></li>
+                        <li><a href="payment.aspx">payment</a></li>
+                        </ul>
+                    </li>
+					<li><a href="contactus.aspx">contactus</a></li>
+                    <li><a href="logout.aspx">logout</a></li>
+
+
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+	<!--  end header  -->
+
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <form id="form1" runat="server">
+    <div>
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+    </div>
+    </form>
+  <!--  start footer  -->
+	<footer>
+		<div class="wrapper">
+			<p class="copyrights">Copyright @ 2015-2016 <a href="simple.aspx" target="_blank" class="website">hype.com</a> All Rights Reserved.</p>
+			
+			<ul class="social">
+				<li>
+					<a href="http://www.facebook.com/hype" target="_blank"><img src="img/fb_icon.png" alt="" title=""></a>
+				</li>
+				<li>
+					<a href="http://www.twitter.com/hype" target="_blank"><img src="img/twitter_icon.png" alt="" title=""></a>
+				</li>
+				<li>
+					<a href=""http://www.plus.google.com/+hype"" target="_blank"><img src="img/google_icon.png" alt="" title=""></a>
+				</li>
+				<li>
+					<a href="#" target="_blank"><img src="img/rss_icon.png" alt="" title=""></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<!--  end footer  -->
+
+	<script type="text/javascript" src="../ga.js"></script>
+</body>
+</html>
+
+
